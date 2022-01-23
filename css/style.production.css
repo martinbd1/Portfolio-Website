@@ -5,110 +5,23 @@
 * Browsers: last 4 version
 */
 
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
 body {
-    font-family: 'Lato', sans-serif;
+    background-color: #FFEEF2;
+    font-family: 'Noto Sans Mono', monospace;
     font-weight: 400;
     font-size: 16px;
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
-    text-align: center;
-  }
-
-  .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    background-color: #a7dcdf;
-  }
-
-  .page-header__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
-  }
-
-  .page-header__item:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: right;
-  }
-
-  .navigation-list {
-    list-style-type: none;
-  }
-
-  .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-  }
- 
-  div {
-    padding: 0px; /* Adds a XXpx inner spacing to all sides*/
-    margin: 0px; /* Adds a XXpx outer spacing to all sides*/
-  }
-
-  .profile {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
-  }
-
-  .nav {
-    text-align: left;
+    color: #564256;
+  
   }
   
-/* ------------Contact Form------------ */
-.contact-main {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-.contact-form {
-  text-align: center;
-  position: relative;
-}
-
-/* ------------About------------ */
-.about {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-.about-list {
-  list-style-type: none;
-}
-
-.about-list li {
-  margin-left: -30px;
-  text-align: center;
-}
-
-.about-programming {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  text-align: center;
-}
-
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
   h1 {
     font-size: 30px;
     font-weight: 700;
@@ -123,69 +36,68 @@ body {
     font-size: 18px;
     font-weight: 700;
   }
+  
   a {
-    color: #f6871f;
+    color: #564256;
   }
   
-  /* ------------Button and link colors---------- */
-  a:hover {
-    /* No underlining when hovering over a link */
+  a:hover,
+  a:focus {
     text-decoration: none;
   }
-
+  
   a:visited {
-    /* visited link */
-    color: #f27581;
+    color: #1B998B;
   }
   
   a:active {
-    /* selected link */
-    color: darkred;
+    color: #E84855;
   }
-
-  a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
-
-
-  .button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the button */
-    background-color: #f6871f;
-    color: #363636;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid #0000004d;
-    -webkit-transition: 0.5s opacity;
-    -o-transition: 0.5s opacity;
-    transition: 0.5s opacity;
-  }
-
-
+  
   button {
     /* overwrites browser defaults and resets the border */
     border: none;
     display: inline-block;
     /* takes the font from the outer container */
     font-family: inherit;
-    /* styles the button */
-    background-color: #f6871f;
-    color: #363636;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #564256;
+    color: white;
     text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
     border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid #0000004d;
-    -webkit-transition: 0.5s opacity;
-    -o-transition: 0.5s opacity;
-    transition: 0.5s opacity;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    -o-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+  }
+  
+  .button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #564256;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    -o-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
   }
   
   button:hover,
@@ -197,26 +109,30 @@ body {
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
   }
-
-/* GRID */
-  .grid {
-    display: -ms-grid;
-    display: grid;
+  
+  .button_secondary {
+    background-color: #E84855;
   }
-
-  .grid__item {
-    background-color: #009D70;
+  
+  .profile__portrait {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
   }
-
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
   }
-
+  
+  .profile__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+  }
+  
   .page-footer {
     clear: both;
     display: -webkit-box;
@@ -226,122 +142,178 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: fixed;
-    bottom: 0px;
     text-align: center;
-    width: 100%;
-    background-color: lightgray;
-    line-height: 0.1;
-    padding-bottom: 10px;
-    margin-top: 0px;
   }
-
-  @media all and (max-width: 500px) {
+  
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #564256;
+  }
+  
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+  
+  .navigation-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+  
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .grid__item {
+    background-color: lightgray;
+  }
+  
+  .about {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+  }
+  
+  .cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+  }
+  
+  .cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  
+  @media all and (max-width:500px) {
     .grid {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
   }
-  @media all and (min-width: 500px) and (max-width: 750px){
+  
+  @media all and (min-width:500px) and (max-width:750px) {
     .grid {
       -ms-grid-columns: 1fr 20px 1fr;
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media all and (max-width: 750px) {
+  
+  @media all and (max-width:750px) {
     .grid {
       grid-gap: 10px;
     }
+  
     .grid__item:last-child {
       grid-column: auto / auto;
       grid-row: auto / auto;
     }
+  
     h1 {
       font-size: 22px;
     }
   }
-
-/* SVG BERLIN ANIMATION */
-
+  
   @-webkit-keyframes color-change {
     0% {
       fill: #edc655;
     }
+  
     50% {
       fill: #fcffad;
     }
+  
     100% {
       fill: #f76414;
     }
   }
-
+  
   @keyframes color-change {
     0% {
       fill: #edc655;
     }
+  
     50% {
       fill: #fcffad;
     }
+  
     100% {
       fill: #f76414;
     }
   }
-
-  .sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
-  }
-
+  
   @-webkit-keyframes cloud-move {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
     }
+  
     to {
       -webkit-transform: translate(200px, 50px);
               transform: translate(200px, 50px);
     }
   }
-
+  
   @keyframes cloud-move {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
     }
+  
     to {
       -webkit-transform: translate(200px, 50px);
               transform: translate(200px, 50px);
     }
   }
-
-  .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
-  }
-
+  
   @-webkit-keyframes cloud-move-reverse {
     from {
       -webkit-transform: translate(446px, 48px);
               transform: translate(446px, 48px);
     }
+  
     to {
       -webkit-transform: translate(100px, 48px);
               transform: translate(100px, 48px);
     }
   }
-
+  
   @keyframes cloud-move-reverse {
     from {
       -webkit-transform: translate(446px, 48px);
               transform: translate(446px, 48px);
     }
+  
     to {
       -webkit-transform: translate(100px, 48px);
               transform: translate(100px, 48px);
     }
-  }
-
-  .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
   }
