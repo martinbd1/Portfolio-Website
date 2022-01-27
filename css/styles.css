@@ -101,6 +101,7 @@ div {
   text-align: justify;
 }
 
+/* ----------Headings---------- */
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -194,7 +195,7 @@ button:focus,
   text-align: center;
 }
 
-
+/* ----------Media/Screen Conditions--------- */
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
