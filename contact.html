@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -36,36 +36,36 @@
         </nav>
     </header>
 
-    <main class="contact-main">
+    <main class="contact-main ">
+        <h1 id="Contact">Contact</h1>
+        <div class="contact-grid">
+            <div class=contact-info>
+                <a href="mailto:martinbd1@gmail.com">Contact me:</a><br>
+                Brian Martin<br>
+                5151 Carvel Ave.<br>
+                Indianapolis, IN<br>
+                46205<br>
+                <br>
+                <a href="tel:+13173637165" id="telephone">Telephone +1 (317)-363-7165</a><br>
+                Skype <a href="skype:martinbd1@gmail.com">martinbd1 (at) gmail.com</a><br>
+                Email <a href="mailto:martinbd1@gmail.com">martinbd1 (at) gmail.com</a>
+            </div>
+            <div class="contact-form">
+                <form action="" method="post">
+                    <label class="standard-label" for="contact-email">Email: </label><br>
+                    <input type="email" id="contact-email" required><br><br>
+                    <!-- fix phone number pattern -->
+                    <label class="standard-label" for="contact-tel">Telephone: </label><br>
+                    <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br><br>
 
-        <div>
-            <h1 id="Contact">Contact</h1>
-        </div>
+                    <label for="contact-msg">Message: </label><br>
+                    <textarea type="msg" id="contact-msg" maxlength="240" rows="2" required></textarea><br>
 
-        <form action="" method="post">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email" required><br><br>
-            <!-- fix phone number pattern -->
-            <label class="standard-label" for="contact-tel">Telephone: </label>
-            <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br><br>
+                    <input type="submit" class="button" value="Send message"><br>
+                    <br>
+                </form>
+            </div>
 
-            <label for="contact-msg">Message: </label>
-            <textarea type="msg" id="contact-msg" maxlength="240" required></textarea><br>
-
-            <input type="submit" class="button" value="Send message"><br>
-            <br>
-        </form>
-
-        <div class="contact-form">
-            <a href="mailto:martinbd1@gmail.com">Contact me:</a><br>
-            Brian Martin<br>
-            5151 Carvel Ave.<br>
-            Indianapolis, IN<br>
-            46205<br>
-            <br>
-            <a href="tel:+13173637165" id="telephone">Telephone +1 (317)-363-7165</a><br>
-            Skype <a href="skype:martinbd1@gmail.com">martinbd1 (at) gmail.com</a><br>
-            Email <a href="mailto:martinbd1@gmail.com">martinbd1 (at) gmail.com</a>
         </div>
 
     </main>
@@ -78,7 +78,8 @@
             <!-- Twitter logo 
             <a href="https://twitter.com"><img src="img/twitter_icon.svg" alt="twitter"></a>-->
             <!-- LinkedIn logo -->
-            <a href="https://www.linkedin.com/in/brian-martin-074bb068/"><img src="img/linkedin_icon.svg" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/brian-martin-074bb068/"><img src="img/linkedin_icon.svg"
+                    alt="linkedin"></a>
         </div>
     </footer>
 
